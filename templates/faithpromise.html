@@ -1,0 +1,180 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+
+{% block body %}
+
+<!-- put html here -->
+<div class="title">
+    <h1>What is Faith Promise Missions?</h1>
+</div>
+
+<div class="textbox">
+    <h2>Faith Promise Missions is a way of giving to world evangelism.<br>
+        Rather than waiting to respond to individual appeals as they come along,<br>
+        believers ask the Lord how much they should give to missions over the <br>
+        next year. They then committ to that annual total as a "Faith Promise."
+    </h2>
+</div>
+<div>
+    <h3 style="margin-left: 75px;">"They gave of themselves as much as they were able, <br> and even beyond their
+        ability. See that you also excel in this <br> grace of giving...Your plenty will 
+        supply what they need." 
+    </h3>
+</div>
+    
+<div id="verse-nav">
+    <p class="align-left">Faith Promise giving <br>above and beyond.
+        <br>(II Corinthians 8:2-3<br>II Corinthians 9:6-15)
+    </p>   
+    <br>  
+    <p class="align-center">Faith Promise giving reflects<br>our personal commitments.<br>(II Corinthians 8:5)</p>
+    <br>      
+    <p class="align-right">Though Faith Promise giving is optional,<br>it does clearly demonstrate our love.
+        <br>(Philippians 2:1-4; Luke 6:38,<br>Romans 12:9-10)
+    </p>
+    <br>
+</div> 
+</div>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+@media (max-width: 1024px) 
+    body {
+        background-color: blue;
+}
+
+@media (max-width: 768px) 
+    body {
+        background-color: red;
+}
+
+@media (max-width: 480px) 
+    body {
+        background-color: green;
+}
+
+@media (max-width: 320px) 
+    body {
+        background-color: orange;
+}
+
+.title {
+    display: flex;
+    text-align: center;
+    margin-top: -70px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1em;
+    color: #09393A;
+    white-space: nowrap;
+}
+
+.textbox {
+    display: flex;
+    text-align: center;
+    margin-top: -50px;
+    margin-left: 75px;
+    font-family: 'Lobster Two', cursive;
+    font-size: 0.7em;
+    color: #09393A;
+    white-space: nowrap;
+}
+
+h2 {
+    display: flex;
+    text-align: center;
+    margin-top: -50px;
+    margin-left: 10px;
+    margin-right: 100px;
+    font-family: 'Lobster Two', cursive;
+    font-size: 0.3em;
+    color: #09393A;
+    white-space: nowrap;
+}
+
+/* h3 {
+    display: flex;
+    margin-left: -100px;
+    font-family: "Lobster Two, cursive";
+    font-size: 7px;
+    color: #09393A;
+    white-space: nowrap;
+
+} */
+
+
+/* .p {
+    display: flex;
+    margin-left: 200px;
+    margin-top: 50px;
+    font-family: "Lobster Two, cursive";
+    font-size: 2em;
+    color: #09393A;
+} */
+
+#verse-nav {
+    float: left;
+    justify-content: space-evenly;
+    background-color: #F8C471;
+    width: 90%;
+    height: 170px;
+    border: 15px black; 
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 100px;
+    border-radius: 60px;
+    opacity: 1;
+} 
+
+.align-left {
+    float: left;
+    padding-left: 0px;
+    margin-top: 18px;
+    margin-left: 80px;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 1.3em;
+    list-style-type: none;
+}
+
+.align-center {
+    float: center;
+    list-style-type: none;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 200px;
+    font-family: 'Balsamiq Sans', cursive;
+    padding-left: 160px;
+    font-size: 1.3em;
+}
+
+.align-right {
+    float: right;
+    margin-left: 650px;
+    margin-top: -160px;
+    padding-right: 30px;
+    font-family: 'Balsamiq Sans', cursive;
+    list-style-type: none;
+    font-size: 1.3em;
+}
+
+h1 {
+    display: flex;
+    margin-left: 380px;
+    margin-top: 50px;
+    font-family: 'Lobster Two', cursive;
+    font-size: 40px;
+    color: #09393A;
+}
+
+</style>
+
+{% endblock %}

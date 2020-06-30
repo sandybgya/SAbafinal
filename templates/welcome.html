@@ -1,0 +1,167 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+
+{% block body %}
+
+    <div class="section-note">
+        <h1>
+            "A  note from Pastor Rob Seale"
+        </h1>
+    </div>
+    <div class="paragraph">
+        <p>
+            Calvary Baptist Church is a Bible-Believing Church<br>
+            who's Doctorine is based on the Biblical standards<br>
+            set by our King of Kings and Lord of Lords.  
+            <br>Our mission is to be used of God to reach the world.<br>
+            Our services are
+            traditional and capture the Love of Christ.<br>Come
+            worship with us as we together can<br>fulfill the 
+            Great Commission of God!
+        </p>
+    </div>
+    <div class="timeline">
+        <h3>CBC Timeline</h3>
+    </div>
+        <div class="container-left">
+            <div class="content">
+                <p>1952 to 1961. The Calvary Baptist Church was founded in February with 12 charter members. The church met in a building downtown in its early beginnings.
+                    In 1953 the land was donated to the CBC at its current location on Hwy 287 East and the first service held was January 18, 1953. Rev. Ernest Phillips led the church until 1961.
+                </p>
+            </div>
+        <div class="container-right">
+            <div class="content">
+                <p>1961 to 1971. After Rev. Phillips left the church, Bro. Bill Hill filled the pulpit from 1961-1964. Rev. Joe Moore followed Hill from 1964-1967 and Rev. Maurice Hutchinson led from 1968-70. John Pettit filled the pulpit from June to December of 1970.
+                </p>
+            </div>
+        </div>
+        <div class="container-left">
+            <div class="content">
+                <p>1971 to 1991. Bro. Roy Sullivan was called to lead the church in 1971 until his death in 1983.
+                    During that time Rev. James Jones served as Associate.
+                    Bro. Gary Pinion was called to lead Calvary Baptist Church in 1983 until 1987. 
+                    While there he began Calvary Baptist Academy, which closed in 1987. 
+                    Tony Colburn was the Assocaite from 1985-1987 and called to lead the church from 1987 to 1991.
+                </p>
+            </div>
+        </div>
+        <div class="container-right">
+            <div class="content">
+                <p>1988 to present. In 1988, Bro Rob Seale was named as Associate Pastor under Colburn. In 1991, Bro Seale took a position for one year in Merkel, TX,
+                    Seale then answered the call to pastor the Calvary Baptist Church in 1992 and is in that position at present time.
+                </p>
+            </div>
+        </div>
+    </div>
+    <style>
+* {
+    box-sizing: border-box;
+}
+
+@media (max-width: 1024px) 
+        body {
+            background-color: blue;
+    }
+
+    @media (max-width: 768px) 
+        body {
+            background-color: red;
+    }
+
+    @media (max-width: 480px) 
+        body {
+            background-color: green;
+    }
+
+    @media (max-width: 320px) 
+        body {
+            background-color: orange;
+    }
+
+.section-note {
+    display: flex;
+    font-family: 'Lobster Two', cursive;
+    font-size: 30px;
+    color: #09393A;
+    white-space: nowrap;
+    margin-top: -20px;
+    margin-left: 300px;
+    white-space: nowrap;
+}
+
+.paragraph {
+    display: flex;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.5em;
+    color: #09393A;
+    font-weight: 900;
+    margin-left: 400px;
+    margin-top: -20px;
+    white-space: nowrap;
+}
+
+.timeline {
+    display: flex;
+    position: center;
+    justify-content: center;
+    font-family: 'Shadows Into Light', cursive;
+    margin-left: -500px;
+    margin-right: 10px;
+    color: #09393A;
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+.container-left {
+    position: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    font-family: 'Shadows Into Light', cursive;
+    color: #09393A;
+    font-size: 20px;
+}
+
+.content { 
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 20px;
+    color: #09393A;
+}
+
+.container-right {
+    position: right;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Shadows Into Light', cursive;
+    color: #09393A;
+    font-size: 20px;
+}
+
+h2 {
+    display: flex;
+    font-size: 20px;
+    color: #09393A;
+}
+
+/* .p {
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    color: #09303A;
+    font-size: 40px;
+} */
+
+h3 {
+    display: flex;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 0.5em;
+    color: #09303A;
+}
+    </style>
+{% endblock %}
+

@@ -1,0 +1,79 @@
+ {% extends 'base.html' %}
+
+    {% block head %}
+
+    {% endblock %}
+
+
+    {% block body %}
+
+        
+        <div class="content">
+                <h1>Prayers</h1>
+
+            <div class="prayers">
+            {% if prayers|length < 1 %}
+            <!-- <h5>Post Prayers</h5> -->
+
+            {%else%}
+                {% for prayer in prayers %}
+                    <div class="prayer">
+                        <div class="prayer-content">
+                           <h2>Prayer</h2>
+                            <p>{{prayer.content}}</p>
+                        </div>
+
+                        <div>
+                            <h4>Actions</h4>
+                            <a href="/delete/{{prayer.id}}">Delete</a>
+                            <a href="/update/{{prayer.id}}">Edit</a>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% endif %}
+            <div>
+
+            <form action="/" method="POST">
+                <input type="text" name="content" id="content">
+                <input type="submit" value="add Prayer">
+            </form>
+        </div> 
+            <div class="title">
+                <h3><strong>Luke 2:10</strong></h3>
+            </div>
+
+            <div class="text">
+                <h4>Therefore said He unto them,
+                    The harvest truly is great,<br> but the labourers
+                    are few: <br>pray ye therefore the Lord of the
+                    harvest,<br> that He would send forth labourers
+                    into His harvest.
+                </h4>
+            </div>
+        <div class="section">
+            <div class="section-nav">
+                <h1><strong>Romans Road<br>Plan of Salvation</strong></h1>
+                <br>
+            </div>
+            <div class="verse-nav">
+                
+                <p style="margin: 1%"> Romans 5:8 "..But God demonstrates His own love toward us, in that yet while we were still sinners, Christ died for us."
+                </p>
+                <p style="margin-left: 2%"> Romans 8:23 "..For all have sinned and come short of the glory of God."&nbsp;
+                </p>
+                <p style="left: 2%"> Romans 6:23 "..For the wages of sin is death, but the gift of God is eternal life through Jesus Christ our Lord."&nbsp;
+                </p>
+                <p style="right: 2%">&nbsp;Romans 10:9 "..because if you confess with your mouth that Jesus is Lord and believe in your heart tht God raised you from the dead, you will be saved."&nbsp;
+                </p>
+                <p style="margin-right: 2%"> Romans 5:1 "..Therefore since we have been justified through faith we have peace with God through out Lord and Savior Jesus Christ."&nbsp;
+                </p>
+                
+            </div>
+        </div>   
+
+
+
+        {% endblock %}
+
+
+

@@ -1,0 +1,185 @@
+body {
+    float: left;
+    width: 50%;
+}
+
+@media and (max-width: 70em) and (min-width: 30em) {
+    .parent {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media and (max-width: 70em) and (min-width: 30em) {
+    .header-bar {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media and (max-width: 70em) and (min-width: 30em) {
+    .navbar {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media and (max-width: 70em) and (min-width: 30em) {
+    .i {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media and (max-width: 70em) and (min-width: 30em) {
+    .aside {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media and (max-width: 70em) and (min-width: 30em) {
+    .dropdown {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media and (max-width: 70em) and (min-width: 30em) {
+    .dropdown-content {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media and (max-width: 70em) and (min-width: 30em) {
+    .button {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media and (max-width: 70em) and (min-width: 30em) {
+    .i {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media and (max-width: 70em) and (min-width: 30em) {
+    h6 {
+        float: left;
+        width: 50%;
+    }
+}
+
+/* @media and (max-width: 70em) and (min-width: 30em) {
+    .section-note {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media and (max-width: 70em) and (min-width: 30em) {
+    h1 {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media and (max-width: 70em) and (min-width: 30em) {
+    .paragraph {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media and (max-width: 70em) and (min-width: 30em) {
+    .container-left {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media and (max-width: 70em) and (min-width: 30em) {
+    .container-right {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media and (max-width: 70em) and (min-width: 30em) {
+    .content {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media and (max-width: 70em) and (min-width: 30em) {
+    .header {
+        float: left;
+        width: 50%;
+    }
+} */
+
+/* @media and (max-width: 70em) and (min-width: 30em) {
+    .column-img {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media and (max-width: 70em) and (min-width: 30em) {
+    h2 {
+        float: left;
+        width: 50%;
+    }
+
+
+@media and (max-width: 70em) and (min-width: 30em) {
+    h3 {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media and (max-width: 70em) and (min-width: 30em) {
+    .iframe {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media and (max-width: 70em) and (min-width: 30em) {
+    .footer {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media and (max-width: 70em) and (min-width: 30em) {
+    #socialmedia {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media and (max-width: 70em) and (min-width: 30em) {
+    .row {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media and (max-width: 70em) and (min-width: 30em) {
+    .column {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media only scree and (min-width: 30em) {
+    .text {
+        font-size: 11px; 
+    }
+} */

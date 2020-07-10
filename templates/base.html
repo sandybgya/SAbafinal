@@ -2,7 +2,9 @@
 <html>
     <head>
         {% block head %}{% endblock %}
-       <link rel="stylesheet" href="{{ url_for('static', filename='/css/main.css')}}">
+       <link rel='stylesheet' media='all' href="{{ url_for('static', filename='/css/main.css')}}">
+       <link rel='stylesheet' media='print' href="{{ url_for('static', filename='/css/main.css')}}">
+       <link rel='stylesheet' media='screen and (min-width: 265px)' href="{{ url_for('static', filename='/css/main.css')}}">
 
 
 <meta charset="utf-8" />
@@ -16,8 +18,6 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Trade+Winds&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    
-    <!-- <link rel="media-queries" href="styles/index.css"> -->
 
     <link rel="home" href="index.html">
     <link rel="contact" href="../contact.html">
@@ -48,9 +48,14 @@
                             </div>
                         </div>
                     </div>
-                    <h6>"The Church Where Folks Take Time To Be Friendly"</h6>
+                    
                 </aside>
+
             </div>
+            
+        </div>
+        <div class="hero-title">
+            <h6>"The Church Where Folks Take Time To Be Friendly"</h6>
         </div>
         {% block body %}{% endblock %}
 
@@ -68,34 +73,7 @@
             width: 100vw;
             overflow-x: hidden;
         }
-        
-        /* @media only screen and (max-width: 615px) {
-            body {
-                background-image: inherit;
-            }
-        
-        } */
-
-        @media (max-width: 1024px) 
-            body {
-                background-color: blue;
-        }
-
-        @media (max-width: 768px) 
-            body {
-                background-color: red;
-        }
-
-        @media (max-width: 480px) 
-            body {
-                background-color: green;
-        }
-
-        @media (max-width: 320px) 
-            body {
-                background-color: orange;
-        }
-        
+       
         .parallax {
             background-image: url(images/field.jpeg);
             min-height: 1500px;
@@ -104,12 +82,6 @@
             background-repeat: no-repeat;
             background-size: cover;
         } 
-        
-            @media only screen and (max-device-witdth: 615px;) {
-            .parallax {
-                background-attachment: scroll;
-            }
-        }
         
         .parent {
             display: flex; 
@@ -120,6 +92,8 @@
         }
         
         .header-bar {
+            align-items: center;
+            display: flex;
             border: none;
             padding: none;
             margin-left: auto;
@@ -137,9 +111,8 @@
             display: inline-block;
             vertical-align: top;
             padding-left: 10px;
-            margin-top: -90px;
-            margin-left: 300px;
-            width: 600px;
+            margin-left: 30px;
+            width: 100%;
             text-align: center;
             overflow: hidden;
             background-color: #df8562;
@@ -154,6 +127,13 @@
             text-align: center;
             padding: 8px 23px;
             text-decoration: none;
+        }
+
+        .hero-title {
+            text-align: center;
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
         }
         
         .dropdown {
@@ -221,15 +201,6 @@
         .aside style {
             font-family: 'Shadows Into Light', cursive;
             color: darkblue;
-        }
-        
-        @media screen and (max-width: 615px) {
-            .navbar.responsive {position: relative;}
-            .navbar.navbar.responsive .icon {
-                position: absolute;
-                left: 0;
-                top: 0;
-            }
         }
         
         .border-box {
@@ -328,13 +299,10 @@
         
         h6 {
             display: inline-block;
-            white-space: nowrap;
             text-align: center;
             justify-content: space-evenly;
-            width: 300px;
             padding-left: 0px;
             padding-top: 0px;
-            margin-left: 10px;
             margin-bottom: 100px;
             font-family: 'Lobster Two', cursive;
             font-size: 3em;
@@ -393,5 +361,42 @@
             flex-direction: column;
             padding-right: 20px;
         }
-        
+
+       /* Mobile styles */
+        /*@media all and (max-width: 60em) and (min-width: 30em) {
+            .parent {
+                float: left;
+                width: 50%;
+            .header-bar {
+                float: left;
+                width: 50;
+            .navbar {
+                float: left;
+                width: 50%;
+            }
+            }
+            }
+        } 
+
+        /* @media screen and (max-width: 615px) {
+            .navbar.responsive {position: relative;}
+            .navbar.navbar.responsive .icon {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+
+        @media all and (max-width: 1024px) and (min-width: 265px) {
+            body {
+                background: inherit;
+            }
+        } */
+
+       /*  @media only screen and (max-device-witdth: 615px;) {
+            .parallax {
+                background-attachment: scroll;
+            }
+        }
+         */
         </style>
